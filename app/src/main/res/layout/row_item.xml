@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="372dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#D1D0CE"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <androidx.cardview.widget.CardView
+                android:id="@id/cv_image"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_barang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_barangName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/cv_image"
+                tools:text="NamaBarang"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_barangTime"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/tv_barangName"
+                android:layout_toEndOf="@+id/cv_image"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:text="Time" />
+
+            <TextView
+                android:id="@+id/tv_barangLoc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/tv_barangTime"
+                android:layout_toEndOf="@+id/cv_image"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:text="Lokasi" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
