@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="90dp"
+    tools:context=".AddActivity">
+
+    <ImageView
+        android:id="@+id/iv_barang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/iv_barang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Choose Picture" />
+
+    <EditText
+        android:id="@+id/et_barangName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_edit_text"
+        android:gravity="center_vertical"
+        android:hint="Nama Barang"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/date_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_barangName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_edit_text"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/tv_barangTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:hint="Time"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/date_picker_toggle_barang"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_date_black_24dp" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_barangLoc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_field"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_edit_text"
+        android:gravity="center_vertical"
+        android:hint="Location"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_barangLoc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_item_list_barang"
+        android:text="Save" />
+
+
+</RelativeLayout>
