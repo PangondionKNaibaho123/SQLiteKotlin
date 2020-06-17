@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
+//MainActivity
+
 class MainActivity : AppCompatActivity() {
 
     var customAdapter: CustomAdapter? = null
