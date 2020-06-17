@@ -22,6 +22,7 @@ import java.io.InputStream
 import java.text.SimpleDateFormat
 import java.util.*
 
+//UpdateActivity
 class UpdateActivity : AppCompatActivity() {
     private lateinit var dateFormat: SimpleDateFormat
 
